@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.PIPCalcGUIView">
+   <children>
+      <HBox layoutX="38.0" layoutY="114.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="four" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="4" />
+            <Button fx:id="five" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="5" />
+            <Button fx:id="six" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="6" />
+            <Button fx:id="minus" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="-" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="158.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="seven" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="7" />
+            <Button fx:id="eight" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="8" />
+            <Button fx:id="nine" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="9" />
+            <Button fx:id="mult" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="*" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="203.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="equal" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="=" />
+            <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="0" />
+            <Button fx:id="clear" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="Clear" />
+            <Button fx:id="div" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="//" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="247.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="greatThan" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="&gt;" />
+            <Button fx:id="greatEqual" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="&gt;=" />
+            <Button fx:id="notEqual" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="!=" />
+            <Button fx:id="pow" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="^" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="291.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="boolEq" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="==" />
+            <Button fx:id="lessThan" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="&lt;" />
+            <Button fx:id="lessEqual" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="&lt;=" />
+            <Button fx:id="negate" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="_" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="339.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="sqRoot" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="\@" />
+            <Button fx:id="absVal" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="|" />
+            <Button fx:id="space" mnemonicParsing="false" prefHeight="34.0" prefWidth="155.0" text="Space" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="383.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="toInfix" mnemonicParsing="false" onAction="#init" prefHeight="34.0" prefWidth="310.0" text="To InFix" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="427.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="toPrefix" mnemonicParsing="false" prefHeight="38.0" prefWidth="282.0" text="To PreFix" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="471.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="toPostfix" mnemonicParsing="false" prefHeight="38.0" prefWidth="317.0" text="To PostFix" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="38.0" layoutY="70.0" prefHeight="38.0" prefWidth="277.0" spacing="2.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="one" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="1" />
+            <Button fx:id="two" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="2" />
+            <Button fx:id="three" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="3" />
+            <Button fx:id="add" mnemonicParsing="false" prefHeight="42.0" prefWidth="83.0" text="+" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+      <RadioButton layoutX="345.0" layoutY="78.0" mnemonicParsing="false" text="Infix" />
+      <RadioButton layoutX="345.0" layoutY="108.0" mnemonicParsing="false" text="Postfix" />
+      <RadioButton layoutX="345.0" layoutY="133.0" mnemonicParsing="false" text="Prefix" />
+      <TextField fx:id="display" alignment="CENTER_RIGHT" layoutX="38.0" layoutY="14.0" prefHeight="45.0" prefWidth="397.0" text="0" />
+   </children>
+</AnchorPane>
